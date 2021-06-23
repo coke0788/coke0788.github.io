@@ -10,8 +10,11 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -26,6 +29,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip();   
+	});
+  </script>
 
   <!-- =======================================================
   * Template Name: Gp - v2.2.1
@@ -160,57 +168,64 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-10 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
                 <a href="http://coke0788.kro.kr/sakila" target = "_blank"><img src="sakila.PNG" class="img-fluid" alt=""></a>
                 <div class="social">
-                  <a href="https://github.com/coke0788/sakila" target = "_blank"><i class="icofont-github"></i></a>
-                  <a href="http://coke0788.kro.kr/sakila" target = "_blank"><i class="icofont-web"></i></a>
+                  <a href="https://github.com/coke0788/sakila" target = "_blank" data-toggle="tooltip" title="github"><i class="icofont-github"></i></a>
+                  <a href="http://coke0788.kro.kr/sakila" target = "_blank" data-toggle="tooltip" title="page"><i class="icofont-web"></i></a>
+                  <a href="sakila_erd.png" target = "_blank" data-toggle="tooltip" title="erd"><i class="icofont-chart-flow-1"></i></a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>Sakila(Spring MVC)</h4>
                 <span class="font-weight-bold">Language </span>Java, SQL, JavaScript, CSS <br>
+                <span class="font-weight-bold">Period </span> 2021.05.21 ~ 2021.06.18(약 4주) <br>
                 <span class="font-weight-bold">Summary </span>비디오 대여 시스템. <br>
                 <span class="font-weight-bold">Detail </span>비디오 대여점 직원을 주체로 게시판 작성, 파일업로드, 수정 및 댓글 기능, 영화/배우/고객 추가 및 검색, 대여/반납, 매출 통계 기능을 구현. <br>
               </div>
+              <hr> 
             </div>
-          </div>
+          </div> 
           
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-10 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
                 <a href="http://coke0788.kro.kr/mall_client2/IndexController" target = "_blank"><img src="mallclient.PNG" class="img-fluid" alt=""></a>
                 <div class="social">
-                  <a href="https://github.com/coke0788/mall_client_final" target = "_blank"><i class="icofont-github"></i></a>
-                  <a href="http://coke0788.kro.kr/mall_client2/IndexController" target = "_blank"><i class="icofont-web"></i></a>
+                  <a href="https://github.com/coke0788/mall_client_final" target = "_blank" data-toggle="tooltip" title="github"><i class="icofont-github"></i></a>
+                  <a href="http://coke0788.kro.kr/mall_client2/IndexController" target = "_blank" data-toggle="tooltip" title="page"><i class="icofont-web"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>E-Book Mall_client(MVC Model)</h4>
+                <h4>E-Book Mall_client(Model 2)</h4>
                 <span class="font-weight-bold">Language </span>Java, SQL, CSS <br>
+                <span class="font-weight-bold">Period </span> 2021.04.12 ~ 2021.05.04(약 3주) <br>
                 <span class="font-weight-bold">Summary </span>E-Book 쇼핑몰 회원용.<br>
                 <span class="font-weight-bold">Detail </span>쇼핑몰 회원 페이지로 도서 주문, 회원정보, 장바구니, 릴리즈 달력, 베스트셀러, 접속자 수 카운팅 기능 구현<br> 
               </div>
+              <hr> 
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-10 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <a href="http://coke0788.kro.kr/mall_admin/themes/classimax-premium/adminIndex.jsp" target = "_blank"><img src="malladmin.PNG" class="img-fluid" alt=""></a>
+                <a href="http://coke0788.kro.kr/mall_admin/themes/classimax-premium/adminIndex.jsp"><img src="malladmin.PNG" class="img-fluid" alt=""></a>
                 <div class="social">
                   <a href="https://github.com/coke0788/mall_admin_final"><i class="icofont-github"></i></a>
                   <a href="http://coke0788.kro.kr/mall_admin/themes/classimax-premium/adminIndex.jsp"><i class="icofont-web"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>E-Book Mall_admin(Model 2)</h4>
+                <h4>E-Book Mall_admin(Model 1)</h4>
                 <span class="font-weight-bold">Language </span>Java, SQL, CSS <br>
+                <span class="font-weight-bold">Period </span> 2021.04.02 ~ 2021.04.09(약 1주) <br>
                 <span class="font-weight-bold">Summary </span>E-Book 쇼핑몰 관리자용. <br>
-                <span class="font-weight-bold">Detail </span>쇼핑몰 관리자 페이지로 레벨에 따른 관리자 권한 설정, 공지사항/도서/고객/관리자/카테고리 수정, 삭제, 추가 기능 구현, 고객 주문 상태 변경 기능 구현, 공지사항 댓글 기능 구현 <br> 
+                <span class="font-weight-bold">Detail </span>쇼핑몰 관리자 페이지로 레벨에 따른 관리자 권한 설정, 공지사항/도서/고객/관리자/카테고리 수정, 삭제, 추가 기능 구현, 고객 주문 상태 변경 기능 구현, 공지사항 댓글 기능 구현 <br>
               </div>
+              <hr>
             </div>
           </div>
 
