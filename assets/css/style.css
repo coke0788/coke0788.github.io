@@ -1571,3 +1571,10 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+#feed {
+  width: 1200px;
+  height: 500px;
+  margin-left: 20px;
+  margin: 20px 0;
+}
