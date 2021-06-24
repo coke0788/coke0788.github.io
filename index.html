@@ -15,6 +15,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
+  <!-- GitHub timeline -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -33,6 +40,15 @@
 	$(document).ready(function(){
 	  $('[data-toggle="tooltip"]').tooltip();   
 	});
+  </script>
+  <script>
+  function updateFeed(username) {
+    GitHubActivity.feed({ username: username, selector: '#feed', limit: 5 });
+  }
+
+  $(document).ready(function() {
+    updateFeed('coke0788');
+  });
   </script>
 
   <!-- =======================================================
@@ -318,14 +334,15 @@
               <h4>CSS</h4>
             </div>
           </div>
-
- 
-
         </div>
-
+        <br>
+        <div class="section-title">
+          <h2>GitHub</h2>
+          <p>GitHub History</p>
+        </div>
+        <div class="col-lg-12 col-md-4 align-center" data-aos="zoom-in" data-aos-delay="100" id="feed"></div>
       </div>
     </section><!-- End Services Section -->
-
    
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
